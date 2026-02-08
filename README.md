@@ -1,5 +1,4 @@
-# comp-sci-coursework
-# Computational Science Coursework 🧬💻
+# Comp-Sci-Coursework 🧬💻
 
 Welcome! This repository serves as a digital archive for my work in Computational Science. It tracks my progress through various numerical methods, scientific simulations, and academic assignments.
 
@@ -20,7 +19,7 @@ Welcome! This repository serves as a digital archive for my work in Computationa
 
 ## 🛠 Tech Stack
 
-- **Language:** Python (mostly) / [Insert other languages like Julia or C++]
+- **Language:** Python
 - **Libraries:** NumPy, SciPy, Pandas, Matplotlib
 - **Environment:** Jupyter Notebooks & VS Code
 
