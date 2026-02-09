@@ -45,13 +45,8 @@ def calculate_ellipse_area(pi_value, semi_major, semi_minor):
 
 def main():
     print("="*70)
-    print("COMPUTATIONAL SCIENCE - PI PRECISION ANALYSIS")
     print("Shape: ELLIPSE (Area = π × a × b)")
     print("="*70)
-    
-    # Calculate pi using Nilakantha series (better convergence)
-    print("\nCalculating Pi using Nilakantha Series...")
-    print("    Formula: π = 3 + 4/(2×3×4) - 4/(4×5×6) + 4/(6×7×8) - ...")
     
     pi_calculated = calculate_pi_nilakantha(100000)
     
@@ -67,7 +62,7 @@ def main():
     decimal_places = [20, 40, 60, 100]
     
     print("\n" + "="*70)
-    print("PRECISION ANALYSIS: Truncation vs Rounding")
+    print("PRECISION ANALYSIS")
     print("="*70)
     
     results = []
@@ -101,28 +96,11 @@ def main():
             'difference': float(difference)
         })
     
-    # Comparison with math.pi
-    print("\n" + "="*70)
-    print("COMPARISON WITH PYTHON'S math.pi")
-    print("="*70)
     area_math_pi = math.pi * float(semi_major_axis) * float(semi_minor_axis)
-    print(f"Python's math.pi: {math.pi}")
-    print(f"Ellipse area using math.pi: {area_math_pi}")
     
     # Visualization
     create_visualizations(results, semi_major_axis, semi_minor_axis, area_math_pi)
-    
-    print("\n" + "="*70)
-    print("CONCLUSION:")
-    print("="*70)
-    print("As decimal precision increases:")
-    print("- The difference between truncation and rounding decreases")
-    print("- Both methods converge to the true value")
-    print("- Rounding is generally more accurate than truncation")
-    print("- At 100 decimal places, the difference is negligible for practical purposes")
-    print("\nGoal achieved: We can see there IS a difference, especially at lower")
-    print("decimal precision, but it becomes insignificant at higher precision.")
-    print("="*70)
+
 
 def create_visualizations(results, semi_major, semi_minor, area_math_pi):
     """Create visualizations of the results"""
